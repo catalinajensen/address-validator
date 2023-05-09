@@ -1,0 +1,20 @@
+.container {
+  height: 100vh;
+  background-color: #f3f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addressSearch {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-color: #ffffff;
+}
+
+.title {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
