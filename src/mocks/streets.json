@@ -1,0 +1,12 @@
+{
+  "streets": [
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSGATA",
+      "streetIds": [14881, 874140, 15003],
+      "isAliasMatch": "0"
+    }
+  ],
+  "totalResults": 3
+}
