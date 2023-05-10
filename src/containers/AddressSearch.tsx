@@ -3,12 +3,13 @@ import { useQuery } from 'react-query';
 import { getAddresses } from '../api/addresses';
 import CountryPicker from '../components/CountryPicker';
 import StreetInput from '../components/StreetInput';
+import { Street } from '../types';
 import './AddressSearch.css';
 
 const AddressSearch: FC = () => {
   const [country, setCountry] = useState<string>('');
   const [streetName, setStreetName] = useState<string>('');
-  const [isAddressValid, setIsAddressValid] = useState<boolean>(false);
+  const [validStreets, setValidStreets] = useState<Street[]>([]);
 
   const { data: addressesData, refetch } = useQuery(
     ['addresses', country, streetName],
@@ -18,17 +19,25 @@ const AddressSearch: FC = () => {
     }
   );
 
-  const validateAddress = () => {
-    if (country && streetName) {
-      refetch();
-    }
-  };
-
   useEffect(() => {
     if (addressesData?.totalResults) {
-      setIsAddressValid(true);
+      setValidStreets(addressesData.streets);
     }
   }, [addressesData]);
+
+  useEffect(() => {
+    setStreetName('');
+  }, [country]);
+
+  useEffect(() => {
+    if (!streetName) {
+      return;
+    }
+
+    if (country) {
+      refetch();
+    }
+  }, [streetName]);
 
   return (
     <div className="container">
@@ -37,12 +46,11 @@ const AddressSearch: FC = () => {
         <div className="addressContainer">
           <CountryPicker setCountry={setCountry} />
           <StreetInput
+            country={country}
             setStreetName={setStreetName}
-            validateAddress={() => validateAddress()}
+            validStreets={validStreets}
           />
         </div>
-
-        {isAddressValid && <div>Valid address</div>}
       </div>
     </div>
   );

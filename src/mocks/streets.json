@@ -2,11 +2,172 @@
   "streets": [
     {
       "countryCode": "NO",
+      "city": "RÅDE",
+      "streetName": "AKER",
+      "streetIds": [876977, 218855],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "TANANGER",
+      "streetName": "AKER BASE",
+      "streetIds": [131188],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "HALDEN",
+      "streetName": "AKERHEIM",
+      "streetIds": [314166],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERLIA",
+      "streetIds": [16902],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "KJØPSVIK",
+      "streetName": "AKERMOVEIEN",
+      "streetIds": [72388],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSBAKKEN",
+      "streetIds": [14967],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSBORG TERRASSE",
+      "streetIds": [16718],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
       "city": "OSLO",
       "streetName": "AKERSGATA",
-      "streetIds": [14881, 874140, 15003],
+      "streetIds": [874140, 14881, 15003],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSGT/BIL",
+      "streetIds": [37387],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSGT NTB",
+      "streetIds": [86841],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSGT VG",
+      "streetIds": [35772],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSHUS FESTNING",
+      "streetIds": [37417, 34995],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSHUSKAIA",
+      "streetIds": [35788],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSHUSSTRANDA",
+      "streetIds": [165129, 14850],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "DRØBAK",
+      "streetName": "AKERSHUSVEIEN",
+      "streetIds": [6917],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "RÅDE",
+      "streetName": "AKERSKOGEN",
+      "streetIds": [875219],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "RÅDE",
+      "streetName": "AKERSTUBBEN",
+      "streetIds": [876742],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "MO I RANA",
+      "streetName": "AKERSVASSVEIEN",
+      "streetIds": [1197598],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "SØRE OSEN",
+      "streetName": "AKERSVEGEN",
+      "streetIds": [196950],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "HOKKSUND",
+      "streetName": "AKERSVEIEN",
+      "streetIds": [515269],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKERSVEIEN",
+      "streetIds": [14968, 14984],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "OSLO",
+      "streetName": "AKER SYKEHUS",
+      "streetIds": [88995],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "VERDAL",
+      "streetName": "AKERVEGEN",
+      "streetIds": [202645],
+      "isAliasMatch": "0"
+    },
+    {
+      "countryCode": "NO",
+      "city": "SEM",
+      "streetName": "AKERVEIEN",
+      "streetIds": [137103],
       "isAliasMatch": "0"
     }
   ],
-  "totalResults": 3
+  "totalResults": 30
 }

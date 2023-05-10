@@ -1,27 +1,74 @@
 .streetInputContainer {
-  margin: 0 20px 20px 20px;
+  margin-left: 15px;
   padding: 10px;
   width: 350px;
 }
 
+.streetInputElement {
+  background-color: #fafafa;
+  padding: 5px;
+  height: 40px;
+}
+
 .inputElement {
   height: 30px;
-  width: 100%;
-  border: #c2c2c2 solid 2px;
+  width: 98%;
+  border: #c2c2c2 solid 1px;
   border-radius: 3px;
   padding: 5px 0 5px 5px;
 }
 
-.validateButton {
-  margin-top: 30px;
-  background-color: #47aae7;
-  border: none;
+.result-list {
+  height: 120px;
+  overflow-y: scroll;
+  border: #c2c2c2 solid 1px;
   border-radius: 3px;
-  color: #fafafa;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+}
+
+/* Overwrite the default to keep the scrollbar always visible */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.scrollable-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.scrollable-element {
+  height: 60px;
+  border-bottom: #c2c2c2 solid 1px;
+  display: flex;
+}
+
+.scrollable-element:hover {
   cursor: pointer;
+  background-color: #fafafa;
+}
+
+.element-details {
+  height: inherit;
+  display: grid;
+  flex: 1;
+}
+
+.element-title {
+  font-size: 14px;
+  padding-left: 5px;
+  padding-top: 10px;
+  margin-bottom: -5px;
+}
+
+.element-subtitle {
+  font-size: 12px;
+  padding-left: 5px;
+  color: #c0c0c0;
 }

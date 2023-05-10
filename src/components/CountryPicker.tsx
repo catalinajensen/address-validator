@@ -27,21 +27,24 @@ interface IProps {
 const CountryPicker: FC<IProps> = ({ setCountry }: IProps) => {
   return (
     <div className="countryPickerContainer">
-      <select
-        id="countries"
-        name="countries"
-        className="countryPickerElement"
-        onChange={(e) => setCountry(e.target.value)}
-      >
-        <option value="">Select your country</option>
-        {Object.values(countries).map(({ label, code }) => {
-          return (
-            <option key={code} value={code}>
-              {label}
-            </option>
-          );
-        })}
-      </select>
+      <form>
+        <select
+          id="countries"
+          name="countries"
+          data-testid="country-picker"
+          className="countryPickerElement"
+          onChange={(e) => setCountry(e.target.value)}
+        >
+          <option value="">Select your country</option>
+          {Object.values(countries).map(({ label, code }) => {
+            return (
+              <option key={code} value={code}>
+                {label}
+              </option>
+            );
+          })}
+        </select>
+      </form>
     </div>
   );
 };
