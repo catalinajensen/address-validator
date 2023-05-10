@@ -7,7 +7,7 @@ const queryClient = new QueryClient();
 const App: FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <AddressSearch />;
+      <AddressSearch />
     </QueryClientProvider>
   );
 };

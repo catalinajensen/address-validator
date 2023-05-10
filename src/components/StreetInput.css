@@ -1,0 +1,27 @@
+.streetInputContainer {
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  width: 350px;
+}
+
+.inputElement {
+  height: 30px;
+  width: 100%;
+  border: #c2c2c2 solid 2px;
+  border-radius: 3px;
+  padding: 5px 0 5px 5px;
+}
+
+.validateButton {
+  margin-top: 30px;
+  background-color: #47aae7;
+  border: none;
+  border-radius: 3px;
+  color: #fafafa;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
