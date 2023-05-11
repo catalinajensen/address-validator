@@ -1,6 +1,36 @@
-# Getting Started with Create React App
+# Address Validator
+
+A simple address validator app using React and Typescript that allows users to pick a street name and building number from any nordic country, while displaying the coordinates, if available.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Architectural choices
+
+This source folder has the following structure:
+
+### `src/api`
+
+Contains the axios call to the API used for fetching addresses.
+
+### `src/components`
+
+Contains the components used for choosing the country and the street number, as well as search and select the street name.
+
+### `src/containers`
+
+Contains the state where the list of valid streets and street numbers are stored. The container manages its state using React Hooks; and React Query for managing the API calls. As the scope of the application is very limited, other state managemnt libraries such as Redux were not necessary; but it could be useful once multiple containers are introduced and shared state becomes available.
+
+### `src/mocks`
+
+Contains mocks that can be used for unit tests. The unit tests are run using Enzyme and Jest, using react-testing-library for visializing the rendered components.
+
+## Future improvements
+
+- Expand the functionality to include floor numbers and other address related data that is available via the API
+- Improve the UI with better choices of colors, patterns and icons
+- Add validation for missing data from the API
+- Add keyboard navigation
+- Expand suit of tests to cover all functionality
 
 ## Available Scripts
 
