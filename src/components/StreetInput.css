@@ -1,16 +1,16 @@
-.streetInputContainer {
+.street-input-container {
   margin-left: 15px;
   padding: 10px;
   width: 350px;
 }
 
-.streetInputElement {
+.street-input-element {
   background-color: #fafafa;
   padding: 5px;
   height: 40px;
 }
 
-.inputElement {
+.input-element {
   height: 30px;
   width: 98%;
   border: #c2c2c2 solid 1px;
@@ -23,6 +23,14 @@
   overflow-y: scroll;
   border: #c2c2c2 solid 1px;
   border-radius: 3px;
+}
+
+.one-result-list {
+  height: 60px;
+}
+
+.no-result-list {
+  display: none;
 }
 
 /* Overwrite the default to keep the scrollbar always visible */

@@ -25,7 +25,7 @@ test('renders header', () => {
 });
 
 test('renders country picker', () => {
-  expect(screen.getAllByRole('option').length).toBe(5);
+  expect(screen.getAllByTestId('country-picker-option').length).toBe(5);
 
   expect(
     screen.getByRole('option', { name: 'Select your country' })
@@ -45,30 +45,35 @@ test('renders input', () => {
   expect(input).toBeDisabled();
 });
 
-describe('select country', () => {
-  test('selects a country and displays the value', () => {
-    const options = screen.getAllByRole('option') as HTMLOptionElement[];
-    const input = screen.getByTestId('item-input');
+test('selects a country and displays the value', () => {
+  const options = screen.getAllByRole('option') as HTMLOptionElement[];
+  const input = screen.getByTestId('item-input');
 
-    expect(options[0].selected).toBe(true);
+  expect(options[0].selected).toBe(true);
 
-    expect(options[1].selected).toBe(false);
-    expect(options[2].selected).toBe(false);
-    expect(options[3].selected).toBe(false);
-    expect(options[4].selected).toBe(false);
+  expect(options[1].selected).toBe(false);
+  expect(options[2].selected).toBe(false);
+  expect(options[3].selected).toBe(false);
+  expect(options[4].selected).toBe(false);
 
-    expect(input).toBeDisabled();
+  expect(input).toBeDisabled();
 
-    fireEvent.change(screen.getByTestId('country-picker'), {
-      target: { value: 'NO' }
-    });
-
-    expect(options[0].selected).toBe(false);
-    expect(options[1].selected).toBe(true);
-    expect(options[3].selected).toBe(false);
-    expect(options[4].selected).toBe(false);
-
-    expect(input).not.toBeDisabled();
-    expect(input).toHaveAttribute('placeholder', 'Enter your street name');
+  fireEvent.change(screen.getByTestId('country-picker'), {
+    target: { value: 'NO' }
   });
+
+  expect(options[0].selected).toBe(false);
+  expect(options[1].selected).toBe(true);
+  expect(options[3].selected).toBe(false);
+  expect(options[4].selected).toBe(false);
+
+  expect(input).not.toBeDisabled();
+  expect(input).toHaveAttribute('placeholder', 'Enter your street name');
+});
+
+test('opens street name selection', () => {
+  const input = screen.getByTestId('item-input');
+  fireEvent.change(input, { target: { value: 'AKER' } });
+
+  expect(screen.getByRole('list')).toHaveClass('scrollable-list');
 });

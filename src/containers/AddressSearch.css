@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.addressSearch {
+.address-search {
   position: relative;
   width: 600px;
   height: 600px;
@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.addressContainer {
+.address-container {
   margin: 10px;
   padding: 10px;
   display: grid;
